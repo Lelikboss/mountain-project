@@ -1,0 +1,18 @@
+.section-get{
+    padding-top: 672px;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 125px;
+}
+.section-block:first-child{
+    max-width: 632px;
+    margin-right: 114px;
+}
+.section__link{
+    display: flex;
+    align-items: center;
+    color: var(--accent-color);
+}

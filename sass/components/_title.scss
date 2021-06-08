@@ -1,0 +1,23 @@
+.section-title,
+.hero__title{
+    font-family: var(--accent-font);
+    font-weight: 600;
+}
+
+.section-title{
+    font-size: var(--sectionTitle-fontSize);
+    line-height: 1.2;
+}
+
+.hero__title{
+    font-size: var(--heroTitle-fontSize);
+    line-height: 1.14;
+}
+
+.section-pretitle{
+    line-height: var(--rare-lineHeight);
+    color: var(--accent-color);
+    font-weight: 800;
+    letter-spacing: 6px;
+    text-transform: uppercase;  
+}
