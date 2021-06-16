@@ -4,10 +4,20 @@ $rare-font: 'Chronicle Display';
     --main-font: 'Gilroy';
     --accent-font: 'Chronicle Display';
     --main-fontSize: 18px;
-    --bg-color: #354147;
+    --bg-color: rgba(11, 29, 38, 1);
     --main-color: #ffffff;
     --accent-color: #FBD784;
     --sectionTitle-fontSize: 64px;
     --heroTitle-fontSize: 88px;
     --rare-lineHeight: 1.22;
+    --font-num-after: 240px;
 }
+
+// @mixin bgnum {
+//         font-size: 240px;
+//         left: -24%;
+//         bottom: 52%;
+//         position: absolute;
+//         color: #fff;
+//         opacity: 0.2;
+// }

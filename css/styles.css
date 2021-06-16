@@ -282,6 +282,7 @@ html {
 }
 
 body {
+  overflow-y: hidden;
   font-family: var(--main-font), sans-serif;
   font-weight: 700;
   font-size: var(--main-fontSize);
@@ -414,6 +415,22 @@ img {
   background-color: var(--accent-color);
 }
 
+.wrapper--bg {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(/images/hero-1x.jpg);
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .wrapper--bg {
+    background-image: url(/images/hero-2x.jpg);
+  }
+}
+
+.wrapper--bg-gradient {
+  background: linear-gradient(330.24deg, rgba(11, 29, 38, 0) 31.06%, #0B1D26 108.93%);
+}
+
 .header {
   padding-top: 24px;
 }
@@ -456,7 +473,7 @@ img {
 
 .hero {
   padding-top: 174px;
-  padding-bottom: 171px;
+  padding-bottom: 603px;
   display: flex;
   justify-content: space-between;
 }
@@ -499,7 +516,7 @@ img {
 }
 
 .hero__pretitle::before {
-  content: '';
+  content: "";
   width: 72px;
   height: 2px;
   margin-right: 32px;
@@ -516,19 +533,25 @@ img {
   color: inherit;
 }
 
-.site-nav {
+.site-nav-bar {
+  display: flex;
   text-align: end;
   position: fixed;
   right: 3%;
-  top: 340px;
+  top: 365px;
 }
 
-.site-nav__item:not(:last-child) {
-  margin-bottom: 40px;
+.site-nav-bar .site-nav {
+  margin-top: 30px;
+}
+
+.site-nav-bar .site-nav__item:not(:last-child) {
+  margin-bottom: 50px;
 }
 
 .section-get {
-  padding-top: 672px;
+  padding-top: 204px;
+  background: linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #0B1D26 47.38%);
 }
 
 .wrapper {
@@ -549,6 +572,17 @@ img {
   color: var(--accent-color);
 }
 
+.section--show {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.element-show {
+  opacity: 1;
+  transition: all 1.5s;
+  transform: translateY(0%);
+}
+
 .essentials .section-block:last-child {
   max-width: 632px;
   margin-left: 114px;
@@ -559,6 +593,7 @@ img {
 }
 
 .footer {
+  height: 100vh;
   display: flex;
   justify-content: space-around;
   padding-bottom: 120px;
@@ -603,15 +638,71 @@ img {
   margin-bottom: 24px;
 }
 
+.progress-container {
+  margin-left: 20px;
+  width: 3px;
+  height: 375px;
+}
+
+.line {
+  width: 5px;
+  background-color: var(--main-color);
+  height: 0;
+  transition: .3s all;
+}
+
 :root {
   --main-font: 'Gilroy';
   --accent-font: 'Chronicle Display';
   --main-fontSize: 18px;
-  --bg-color: #354147;
+  --bg-color: rgba(11, 29, 38, 1);
   --main-color: #ffffff;
   --accent-color: #FBD784;
   --sectionTitle-fontSize: 64px;
   --heroTitle-fontSize: 88px;
   --rare-lineHeight: 1.22;
+  --font-num-after: 240px;
+}
+
+.section-get--after {
+  position: relative;
+}
+
+.section-get--after::after {
+  position: absolute;
+  left: -24%;
+  top: -46%;
+  font-size: 240px;
+  color: #fff;
+  opacity: 0.2;
+  content: "01";
+}
+
+.section-essentials--after {
+  position: relative;
+}
+
+.section-essentials--after::after {
+  position: absolute;
+  left: -24%;
+  top: -46%;
+  font-size: 240px;
+  color: #fff;
+  opacity: 0.2;
+  content: "02";
+}
+
+.section-where--after {
+  position: relative;
+}
+
+.section-where--after::after {
+  position: absolute;
+  left: -24%;
+  top: -46%;
+  font-size: 240px;
+  color: #fff;
+  opacity: 0.2;
+  content: "03";
 }
 /*# sourceMappingURL=styles.css.map */

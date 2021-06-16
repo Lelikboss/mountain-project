@@ -1,0 +1,30 @@
+@mixin bgnum {
+    position: absolute;
+    left: -24%;
+    top: -46%;
+
+    font-size: 240px;
+    color: #fff;
+    opacity: 0.2;
+}
+.section-get--after{
+    position: relative;
+    &::after{
+        @include bgnum;
+        content: "01";
+    }
+}
+.section-essentials--after{
+    position: relative;
+    &::after{
+        @include bgnum;
+        content: "02";
+    }
+}
+.section-where--after{
+    position: relative;
+    &::after{
+        @include bgnum;
+        content: "03";
+    }
+}

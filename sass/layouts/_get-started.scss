@@ -1,5 +1,6 @@
 .section-get{
-    padding-top: 672px;
+    padding-top: 204px;
+    background: linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #0B1D26 47.38%);
 }
 .wrapper{
     display: flex;
@@ -16,3 +17,16 @@
     align-items: center;
     color: var(--accent-color);
 }
+
+
+
+.section--show{
+    opacity: 0;
+    transform: translateY(20px);
+}
+.element-show {
+  opacity: 1;
+  transition: all 1.5s;
+  transform: translateY(0%);
+}
+

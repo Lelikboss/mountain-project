@@ -1,0 +1,13 @@
+.progress-container {
+    margin-left: 20px;
+    width: 3px;
+    height: 375px;
+    // background: #ccc;
+  }
+
+  .line {
+    width: 5px;
+    background-color: var(--main-color);
+    height: 0;
+    transition: .3s all;
+ }
