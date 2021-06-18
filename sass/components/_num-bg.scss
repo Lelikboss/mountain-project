@@ -1,9 +1,17 @@
 @mixin bgnum {
     position: absolute;
-    left: -24%;
-    top: -46%;
+    @media screen and (max-width: 675.98px) {
+        left: -12%;
+        top: -46%;
 
-    font-size: 240px;
+        font-size: 160px;
+    }
+    @media screen and (min-width: 676px) {
+        left: -24%;
+        top: -46%;
+    
+        font-size: 240px;
+    }
     color: #fff;
     opacity: 0.2;
 }

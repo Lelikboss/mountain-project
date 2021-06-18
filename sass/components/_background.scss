@@ -1,11 +1,17 @@
-.wrapper--bg{
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-image: url(/images/hero-1x.jpg);
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        background-image: url(/images/hero-2x.jpg);
-      }
+.wrapper--bg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(/images/hero-1x.jpg);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(/images/hero-2x.jpg);
+  }
 }
-.wrapper--bg-gradient{
-  background: linear-gradient(330.24deg, rgba(11, 29, 38, 0) 31.06%, #0B1D26 108.93%);
+.wrapper--bg-gradient {
+  background: linear-gradient(
+    367.24deg,
+    rgba(11, 29, 38, 0) -39.94%,
+    #0b1d26 104.93%
+  );
 }

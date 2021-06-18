@@ -43,127 +43,135 @@
   <body>
     <div class="wrapper--bg">
       <div class="wrapper--bg-gradient">
-        <header id="header" class="header">
-          <div class="container header__container">
-            <a class="logo header__logo link" href="#header">MNTN</a>
-            <nav class="header-nav">
-              <ul class="header-nav__list list">
-                <li class="header-nav__item">
-                  <a class="header-nav__link link" href="">Equipment</a>
+        <div class="top--height">
+<!-- Header start -->
+          <header id="header" class="header">
+            <div class="container header__container">
+              <a class="logo header__logo link" href="#header">MNTN</a>
+              <nav class="header-nav">
+                <ul class="header-nav__list list">
+                  <li class="header-nav__item">
+                    <a class="header-nav__link link" href="">Equipment</a>
+                  </li>
+                  <li class="header-nav__item">
+                    <a class="header-nav__link link" href="">About us</a>
+                  </li>
+                  <li class="header-nav__item">
+                    <a class="header-nav__link link" href="">Blog</a>
+                  </li>
+                </ul>
+              </nav>
+              <button class="header__btn registration-btn">
+                <svg class="registration-btn__icon" width="24" height="24">
+                  <use href="./images/sprite.svg#icon-account"></use>
+                </svg>
+                <span class="registration-btn__text">Account</span>
+              </button>
+            </div>
+          </header>
+<!-- Header finish -->
+
+<!-- Hero start -->
+          <div id="hero" class="container hero">
+            <ul class="list social-list">
+              <li class="social-list__item">Follow us</li>
+              <li class="social-list__item">
+                <a class="social-list__link" href="">
+                  <svg class="social-list__icon" width="24" height="24">
+                    <use href="./images/sprite.svg#icon-instagr"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a class="social-list__link" href="">
+                  <svg class="social-list__icon" width="24" height="24">
+                    <use href="./images/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <div class="hero--center section--show">
+              <p class="hero__pretitle section-pretitle">A Hiking guide</p>
+              <h1 class="hero__title">
+                Be prepared for the Mountains and beyond!
+              </h1>
+              <a class="hero__link link" href="#get">
+                <svg class="hero__link-icon" width="24" height="32">
+                  <use href="./images/sprite.svg#icon-arrow-down"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="site-nav-bar">
+              <ul class="list site-nav">
+                <li class="site-nav__item">
+                  <a class="site-nav__link link" href="#header">Start</a>
                 </li>
-                <li class="header-nav__item">
-                  <a class="header-nav__link link" href="">About us</a>
+                <li class="site-nav__item">
+                  <a class="site-nav__link link" href="#get">01</a>
                 </li>
-                <li class="header-nav__item">
-                  <a class="header-nav__link link" href="">Blog</a>
+                <li class="site-nav__item">
+                  <a class="site-nav__link link" href="#essentials">02</a>
+                </li>
+                <li class="site-nav__item">
+                  <a class="site-nav__link link" href="#last">03</a>
+                </li>
+                <li class="site-nav__item">
+                  <a class="site-nav__link link" href="#footer">Info</a>
                 </li>
               </ul>
-            </nav>
-            <button class="header__btn registration-btn">
-              <svg class="registration-btn__icon" width="24" height="24">
-                <use href="./images/sprite.svg#icon-account"></use>
-              </svg>
-              <span class="registration-btn__text">Account</span>
-            </button>
+              <div class="progress-container">
+                <div class="line" id="line"></div>
+              </div>
+            </div>
           </div>
-        </header>
-
-        <div id="hero" class="container hero">
-          <ul class="list social-list">
-            <li class="social-list__item">Follow us</li>
-            <li class="social-list__item">
-              <a class="social-list__link" href="">
-                <svg class="social-list__icon" width="24" height="24">
-                  <use href="./images/sprite.svg#icon-instagr"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-list__item">
-              <a class="social-list__link" href="">
-                <svg class="social-list__icon" width="24" height="24">
-                  <use href="./images/sprite.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-          <div class="hero--center section--show">
-            <p class="hero__pretitle section-pretitle">A Hiking guide</p>
-            <h1 class="hero__title">
-              Be prepared for the Mountains and beyond!
-            </h1>
-            <a class="hero__link link" href="">
-              <span class="hero__link--position">scroll down</span>
-              <svg class="hero__link-icon" width="16" height="24">
+<!-- Hero finish -->
+        </div>
+      </div>
+    </div>
+<!-- Get section start -->
+    <section id="get" class="section section-get">
+      <div class="container get grid">
+        <div class="wrapper">
+          <div class="section-block section-get--after section--show">
+            <p class="get__pretitle section-pretitle">GEt Started</p>
+            <h2 class="get__title section-title">
+              What level of hiker are you?
+            </h2>
+            <p class="get__text section-text">
+              Determining what level of hiker you are can be an important tool
+              when planning future hikes. This hiking level guide will help you
+              plan hikes according to different hike ratings set by various
+              websites like All Trails and Modern Hiker. What type of hiker are
+              you – novice, moderate, advanced moderate, expert, or expert
+              backpacker?
+            </p>
+            <a class="hero__link link" href="#essentials">
+              <svg class="hero__link-icon" width="24" height="32">
                 <use href="./images/sprite.svg#icon-arrow-down"></use>
               </svg>
             </a>
+            <!-- <button class="button hero__button" type="button" data-modal-open>
+              Show photo
+            </button> -->
           </div>
-          <div class="site-nav-bar">
-            <ul class="list site-nav">
-              <li class="site-nav__item">
-                <a class="site-nav__link link" href="#header">Start</a>
-              </li>
-              <li class="site-nav__item">
-                <a class="site-nav__link link" href="#get">01</a>
-              </li>
-              <li class="site-nav__item">
-                <a class="site-nav__link link" href="#essentials">02</a>
-              </li>
-              <li class="site-nav__item">
-                <a class="site-nav__link link" href="#last">03</a>
-              </li>
-              <li class="site-nav__item">
-                <a class="site-nav__link link" href="#footer">Info</a>
-              </li>
-            </ul>
-            <div class="progress-container">
-              <div class="line" id="line"></div>
-            </div>
-          </div> 
+          <div class="section-block section-block--none">
+            <picture>
+              <source
+                srcset="./images/1-1x.jpg 1x, ./images/1-2x.jpg 2x"
+                type="image/jpg"
+              />
+              <img class="section__img" src="./images/1-1x.jpg" alt="mntn" />
+            </picture>
+          </div>
         </div>
       </div>
-
-      <section id="get" class="section section-get">
-        <div class="container get grid">
-          <div class="wrapper">
-            <div class="section-block section-get--after section--show">
-              <p class="get__pretitle section-pretitle">GEt Started</p>
-              <h2 class="get__title section-title">
-                What level of hiker are you?
-              </h2>
-              <p class="get__text section-text">
-                Determining what level of hiker you are can be an important tool
-                when planning future hikes. This hiking level guide will help
-                you plan hikes according to different hike ratings set by
-                various websites like All Trails and Modern Hiker. What type of
-                hiker are you – novice, moderate, advanced moderate, expert, or
-                expert backpacker?
-              </p>
-              <a class="get__link section__link link" href="">
-                <span> read more </span>
-                <svg class="section__link-icon" width="16" height="24">
-                  <use href="./images/sprite.svg#icon-arrow-right"></use>
-                </svg>
-              </a>
-            </div>
-            <div class="section-block">
-              <picture>
-                <source
-                  srcset="./images/1-1x.jpg 1x, ./images/1-2x.jpg 2x"
-                  type="image/jpg"
-                />
-                <img src="./images/1-1x.jpg" alt="mntn" width="566" />
-              </picture>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-
+    </section>
+<!-- Get section finish -->
+<!-- Essentials section start -->
     <section id="essentials" class="section essentials">
       <div class="container grid">
         <div class="wrapper">
-          <div class="section-block">
+          <div class="section-block section-block--none">
             <picture>
               <source
                 srcset="./images/2-1x.jpg 1x, ./images/2-2x.jpg 2x"
@@ -171,7 +179,7 @@
                 type="image/jpg"
               />
 
-              <img src="./images/2-1x.jpg" alt="mntn" width="566" />
+              <img class="section__img" src="./images/2-1x.jpg" alt="mntn" />
             </picture>
           </div>
           <div class="section-block section-essentials--after section--show">
@@ -186,17 +194,18 @@
               beginners make is wearing jeans and regular clothes, which will
               get heavy and chafe wif they get sweaty or wet.
             </p>
-            <a class="get__link section__link link" href="">
-              <span> read more </span>
-              <svg class="section__link-icon" width="16" height="24">
-                <use href="./images/sprite.svg#icon-arrow-right"></use>
+            <a class="hero__link link" href="#last">
+              <svg class="hero__link-icon" width="24" height="32">
+                <use href="./images/sprite.svg#icon-arrow-down"></use>
               </svg>
             </a>
           </div>
         </div>
       </div>
     </section>
+<!-- Essential section finish -->
 
+<!-- Where section start -->
     <section id="last" class="section last-section">
       <div class="container">
         <div class="wrapper">
@@ -214,27 +223,28 @@
               next landmark is as I hike. For example, I’ll read the guide and
               know that say, in a mile, I make a right turn at the junction..
             </p>
-            <a class="get__link section__link link" href="">
-              <span> read more </span>
-              <svg class="section__link-icon" width="16" height="24">
-                <use href="./images/sprite.svg#icon-arrow-right"></use>
+            <a class="hero__link link" href="#footer">
+              <svg class="hero__link-icon" width="24" height="32">
+                <use href="./images/sprite.svg#icon-arrow-down"></use>
               </svg>
             </a>
           </div>
-          <div class="section-block">
+          <div class="section-block section-block--none">
             <picture>
               <source
                 srcset="./images/3-1x.jpg 1x, ./images/3-2x.jpg 2x"
                 media="(min-width: 1280px)"
                 type="image/jpg"
               />
-              <img src="./images/3-1x.jpg" alt="mntn" width="566" />
+              <img class="section__img" src="./images/3-1x.jpg" alt="mntn" />
             </picture>
           </div>
         </div>
       </div>
     </section>
+<!-- Where section finish -->
 
+<!-- Footer start -->
     <footer id="footer" class="footer-section">
       <div class="container footer">
         <ul class="list footer-list footer-grid footer-list--grid">
@@ -285,9 +295,23 @@
           </ul>
         </div>
       </div>
+
     </footer>
+<!-- Footer finish -->
 
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal__btn-close" data-modal-close>
+          <svg class="icon">
+            <use href="./images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+        <img src="./images/1-1x.jpg" alt="" width="350">
+      </div>
+    </div>
 
-<script src="js/script.js"></script>
+<!-- Add scripts -->
+    <script src="js/modal.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

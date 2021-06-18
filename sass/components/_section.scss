@@ -1,3 +1,20 @@
 .section{
-    padding-top: 200px;
+    @media screen and (max-width: 1919.98px) {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    height: 100vh;
+    &-text{
+        @media screen and (max-width: 468px) {
+            max-width: 230px;
+        }
+    }
+    &-title{
+        @media screen and (max-width: 468px) {
+            font-size: 24px;
+        }
+    }
+}
+.section__img{
+    height: 70vh;
 }

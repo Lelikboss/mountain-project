@@ -1,5 +1,15 @@
 .container{
-    max-width: 1760px;
+    // @media screen and (max-width: 1199.98px) {
+    //     max-width: 1024px;
+    // }
+    @media screen and (max-width: 1919.98px) {
+        max-width: cacl(1200px - 188px);
+        // padding-right: 94px;
+        // padding-left: 94px;
+    }
+    @media screen and (min-width: 1920px) {
+        max-width: 1760px;
+    }
     padding-right: 32px;
     padding-left: 32px;
     margin-right: auto;

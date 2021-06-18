@@ -28,7 +28,7 @@ document.addEventListener('scroll', function() {
    setWidthLine();
 });
 
-document.addEventListener('resize', function() {
+document.addEventListener('resize', function() {   /////////////////  скролл-бар
    setWidthLine();
 });
 
@@ -43,7 +43,7 @@ function setWidthLine() {
 
 
 
-function onEntry(entry) {
+function onEntry(entry) {  /////////////////////////  анимация блоков
     entry.forEach(change => {
       if (change.isIntersecting) {
        change.target.classList.add('element-show');
@@ -51,11 +51,13 @@ function onEntry(entry) {
     });
   }
   
-  let options = {
+  let options = {   ////////////////////////////////////   анимация блоков
     threshold: [0.5] };
   let observer = new IntersectionObserver(onEntry, options);
   let elements = document.querySelectorAll('.section--show');
   
   for (let elm of elements) {
     observer.observe(elm);
-  }
+  }   /////////////////////////////////////////////////  фнимация блоков
+
+

@@ -5,12 +5,28 @@
 }
 
 .section-title{
-    font-size: var(--sectionTitle-fontSize);
+    @media screen and (max-width: 679.98px) {
+        font-size: 24px;
+    }
+    @media screen and (min-width: 680px) and (max-width: 1919.98px) {
+        font-size: 48px;
+    }
+    @media screen and (min-width: 1920px) {
+        font-size: var(--sectionTitle-fontSize);
+    }
     line-height: 1.2;
 }
 
 .hero__title{
-    font-size: var(--heroTitle-fontSize);
+    @media screen and (min-width: 468px) and (max-width: 978.98px) {
+    font-size: 48px;
+    }
+    @media screen and (min-width: 980px) and (max-width: 1919.98px) {
+        font-size: 68px;
+    }
+    @media screen and (min-width: 1920px) {
+        font-size: var(--heroTitle-fontSize);
+    }
     line-height: 1.14;
 }
 

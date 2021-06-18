@@ -1,4 +1,19 @@
+.essentials .section-block{
+    @media screen and (max-width: 1920px) {
+        max-width: none;
+    }
+}
 .essentials .section-block:last-child{
-    max-width: 632px;
-    margin-left: 114px;
+    @media screen and (max-width: 979.98px) {
+        margin-left: 0;
+        max-width: 380px;
+    }
+    @media screen and (min-width: 980px) and (max-width: 1919.98px) {
+        max-width: 380px;
+        margin-left: 45px;
+    }
+    @media screen and (min-width: 1920px) {
+        max-width: 632px;
+        margin-left: 114px;
+    }
 }

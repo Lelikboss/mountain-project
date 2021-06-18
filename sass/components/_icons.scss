@@ -3,7 +3,23 @@
 }
 .social-list__icon{
     fill: var(--main-color);
-    transform: rotate(-90deg);
+    @media screen and (min-width: 1200px) {
+        transform: rotate(-90deg);
+        animation: fills 1500ms linear;
+        animation-iteration-count: infinite;
+
+    }
+    @keyframes fills {
+        0%{
+            fill: var(--main-color);
+        }
+        50%{
+            fill: var(--bg-color);
+        }
+        100%{
+            fill: var(--accent-color);
+        }
+    }
 }
 .hero__link-icon{  ///// scroll down -- btn ///
     fill: var(--main-color);
