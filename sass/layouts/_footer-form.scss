@@ -1,6 +1,6 @@
 .form{
     margin-left: 168px;
-    padding-bottom: 66px;
+    padding-bottom: 150px;
     text-align: center;
 
     display: flex;
@@ -10,6 +10,7 @@
         margin-left: 45px;
     }
     &__textarea{
+        color: var(--main-color);
         overflow: hidden;
         resize: none;
         display: block;
@@ -19,15 +20,17 @@
         margin-bottom: 15px;
         width: calc((100% - 30px) / 2);
         height: 95px;
-        background-color: rgba(7, 37, 34, 56%);
+        background-color: rgba(134, 204, 29, 0.014);
         border-radius: 15px;
         outline: none;
     }
     &__email{
+        outline: none;
+        color: var(--main-color);
         background-color: inherit;
         border: none;
         border-bottom: 1px solid gold;
-        background-color: rgba(7, 37, 34, 56%);
+        background-color: rgba(134, 204, 29, 0.014);
         border-radius: 15px;
         margin-bottom: 15px;
         padding: 10px;

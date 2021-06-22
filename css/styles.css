@@ -293,6 +293,7 @@ html {
 }
 
 body {
+  overflow-y: hidden;
   font-family: var(--main-font), sans-serif;
   font-weight: 700;
   line-height: 1.78;
@@ -539,7 +540,7 @@ img {
 
 .form {
   margin-left: 168px;
-  padding-bottom: 66px;
+  padding-bottom: 150px;
   text-align: center;
   display: flex;
 }
@@ -551,6 +552,7 @@ img {
 }
 
 .form__textarea {
+  color: var(--main-color);
   overflow: hidden;
   resize: none;
   display: block;
@@ -560,16 +562,18 @@ img {
   margin-bottom: 15px;
   width: calc((100% - 30px) / 2);
   height: 95px;
-  background-color: #072522;
+  background-color: rgba(134, 204, 29, 0.014);
   border-radius: 15px;
   outline: none;
 }
 
 .form__email {
+  outline: none;
+  color: var(--main-color);
   background-color: inherit;
   border: none;
   border-bottom: 1px solid gold;
-  background-color: #072522;
+  background-color: rgba(134, 204, 29, 0.014);
   border-radius: 15px;
   margin-bottom: 15px;
   padding: 10px;
