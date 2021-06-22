@@ -248,25 +248,6 @@
     <footer id="footer" class="footer-section">
       <div class="container">
         <form class="form">
-          <div class="form__block--position">
-            <label class="form__label">
-              <input
-                class="form__field"
-                type="text"
-                name="username"
-                placeholder="Your name"
-              />
-            </label>
-            <label class="form__label">
-              <input
-                class="form__field"
-                type="email"
-                name="email"
-                placeholder="Your e-mail"
-              />
-            </label>
-          </div>
-          <div class="form__block--position">
             <textarea
               class="form__textarea"
               name="user_message"
@@ -275,8 +256,10 @@
               rows="10"
               placeholder="Ask a Question"
             ></textarea>
-          </div>
-          <button class="form__button" type="submit">Send</button>
+            <div class="form--position">
+              <input class="form__email" type="text" name="email" placeholder="Email">
+              <button class="form__button" type="submit">Send</button>
+            </div>
         </form>
         <div class="footer">
           <ul class="list footer-list footer-grid footer-list--grid">
