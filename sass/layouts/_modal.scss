@@ -11,9 +11,9 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(112, 184, 17, 0.2);
+    background-color: rgba(0, 0, 0, 0.8);
     opacity: 1;
-    transition: opacity 1500ms;
+    transition: opacity var(--time-hover);
 }
 .is-hidden .modal{
     transform: translate(-50%, -50%) scale(0);
@@ -21,8 +21,8 @@
 .modal{
     width: 100%;
     max-width: 528px;
-    min-height: 300px;
-    max-height: 500px;
+    min-height: 581px;
+
     padding: 40px;
 
     position: absolute;
@@ -30,7 +30,7 @@
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
 
-    background-color: red;
+    background-color: rgb(65, 85, 35);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
 
@@ -65,17 +65,161 @@
 
     background-color: transparent;
 
-    transition: background-color 1500ms, fill 1500ms;
+    transition: background-color var(--time-hover), fill var(--time-hover);
 
     &:hover{
         fill: var(--accent-color);
         background-color: rgba(0, 0, 0, 0.1);
     }
 }
+.modal__title{
+    margin-bottom: 12px;
 
-.button{
-    display: inline-block;
-    padding: 10px 15px;
-    border-radius: 50px;
-    background-color: transparent;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+
+    color: var(--complementary-color);
+}
+
+
+
+.modal-form__label{
+    width: 448px;
+}
+.modal-form__field{
+    width: 100%;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 42px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    transition: border-color var(--time-hover);
+
+    &:focus{
+        outline: none;
+        border-color: var(--accent-color);
+    }
+    &:focus + .modal-form__icon{
+        fill: var(--accent-color);;
+    }
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus{
+        -webkit-text-fill-color: var(--complementary-color);
+        -webkit-box-shadow: 0 0 0px 1000px var(--rare-color) inset;
+    }
+}
+
+.modal-form__field + .modal-form__icon{
+    transition: fill var(--time-hover);
+}
+
+.modal-form__position {
+    position: relative;
+    margin-bottom: 10px;
+}
+.modal-form__icon{
+    position: absolute;
+    fill: var(--complementary-color);
+    width: 18px;
+    height: 18px;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.modal-form__field-text{
+    display: block;
+    margin-bottom: 4px;
+
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+}
+.modal-form__textarea-field{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 16px;
+    padding-left: 16px;
+    width: 100%;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    resize: none;
+
+    transition: border-color var(--time-hover);
+
+    &:focus{
+        outline: none;
+        border-color: var(--accent-color);
+    }
+}
+.form-modal__textarea{
+    margin-bottom: 20px;
+}
+.form-modal__textarea-text{
+    display: block;
+    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+}
+
+.check{
+    display: inline-flex;
+    text-align: center;
+    padding-left: 34px;
+    margin-bottom: 30px;
+}
+.form__check-link{
+    color: var(--accent-color);
+}
+.form__check,
+.form__check-link{
+    @media screen and (max-width: 1199.98px) {
+        font-size: 12px;
+        line-height: 1.16;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.71;
+    }
+}
+.form__check{
+    transition: color var(--time-hover);
+}
+.check__input{
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.check__box{
+    position: absolute;
+    width: 16px;
+    height: 15px;
+    background-image: url(../images/no.svg);
+
+    margin-left: -21px;
+}
+
+.check__input:focus + .check__box + .form__check{
+    box-shadow: #188CE8;
+    color: #000;
+}
+.check__input:checked + .check__box{
+    box-shadow: #188CE8;
+    background-image: url(../images/yes.svg);
+} 
+.modal-form__button{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 200px;
+    padding: 10px 55px 10px 55px;
+
+    transition: background-color var(--time-hover);
 }

@@ -61,7 +61,7 @@
                   </li>
                 </ul>
               </nav>
-              <button class="header__btn registration-btn">
+              <button class="header__btn registration-btn" type="button" data-modal-open>
                 <svg class="registration-btn__icon" width="24" height="24">
                   <use href="./images/sprite.svg#icon-account"></use>
                 </svg>
@@ -322,7 +322,60 @@
             <use href="./images/sprite.svg#icon-close"></use>
           </svg>
         </button>
-        <img src="./images/1-1x.jpg" alt="" width="350" />
+        <h2 class="modal__title">Оставьте свои данные, мы вам перезвоним</h2>
+        <form class="modal-form">
+          <span class="modal-form__field-text">Имя</span>
+          <div class="modal-form__position">
+            <label class="modal-form__label">
+              <input class="modal-form__field" type="text" name="username" />
+              <svg class="modal-form__icon">
+                <use href="./images/sprite.svg#icon-form-user"></use>
+              </svg>
+            </label>
+          </div>
+          <span class="modal-form__field-text">Телефон</span>
+          <div class="modal-form__position">
+            <label class="modal-form__label">
+              <input class="modal-form__field" type="tel" name="tel" />
+              <svg class="modal-form__icon">
+                <use href="./images/sprite.svg#icon-form-phone"></use>
+              </svg>
+            </label>
+          </div>
+          <span class="modal-form__field-text">Почта</span>
+          <div class="modal-form__position">
+            <label class="modal-form__label">
+              <input class="modal-form__field" type="email" name="email" />
+              <svg class="modal-form__icon">
+                <use href="./images/sprite.svg#icon-form-email"></use>
+              </svg>
+            </label>
+          </div>
+          <div class="form-modal__textarea">
+            <span class="form-modal__textarea-text">Комментарий</span>
+            <textarea
+              class="modal-form__textarea-field"
+              name="user_message"
+              placeholder="Введите текст"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+          <label class="check option">
+            <input
+              class="check__input"
+              type="checkbox"
+              name="accept"
+              value="check"
+            />
+            <span class="check__box"></span>
+            <span class="form__check">Соглашаюсь с рассылкой и принимаю </span
+            ><a class="form__check-link" href="">Условия договора</a>
+          </label>
+          <button class="button modal-form__button" type="submit">
+            Отправить
+          </button>
+        </form>
       </div>
     </div>
 
